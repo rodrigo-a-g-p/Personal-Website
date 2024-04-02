@@ -1,0 +1,53 @@
+.skills {
+  &--grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 8rem;
+
+    @include respond(832) {
+      row-gap: 12rem;
+    }
+
+    &--item {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      gap: 20rem;
+
+      @include respond(1040) {
+        gap: 5rem;
+      }
+    }
+  }
+
+  &--text {
+    flex: 0 1 40rem;
+
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    text-align: justify;
+    @extend %hover-transform-translate-animation;
+
+    &--title {
+      font-weight: 700;
+      font-size: 2.5rem;
+    }
+
+    &--description {
+      font-size: 1.5rem;
+      line-height: 1.5;
+    }
+  }
+
+  &--image {
+    max-width: 30rem;
+    border-radius: $border-radius-sm;
+    @extend %hover-transform-translate-animation;
+
+    @include respond(1040) {
+      order: -1;
+    }
+  }
+}

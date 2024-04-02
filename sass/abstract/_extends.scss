@@ -1,0 +1,15 @@
+%hover-transform-translate-animation {
+  transition: transform 0.3s;
+
+  &:hover {
+    transform: translate(0, -1.5rem);
+  }
+}
+
+%hover-transform-scale-animation {
+  transition: all 0.3s;
+
+  &:hover {
+    transform: scale(1.1);
+  }
+}

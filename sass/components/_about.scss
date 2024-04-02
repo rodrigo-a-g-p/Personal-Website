@@ -1,0 +1,42 @@
+.about {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6rem;
+
+  padding: 6rem 0;
+
+  animation: fadeIn 3s ease-out;
+
+  &--image--container {
+    display: flex;
+    justify-content: center;
+    clip-path: circle();
+    background-color: rgb(245, 248, 251);
+
+    // I was forced to use this method instead of simply giving a border-radius to the image because when i apply a border radius to the image, the image is not completely round, it's more of an oval shape; maybe this is because of the dimensions of the image; therefore, I used the clip-path property
+
+    transition: all 0.3s;
+    &:hover {
+      transform: scale(1.2);
+    }
+  }
+
+  &--image {
+    width: 15%;
+  }
+
+  &--text {
+    max-width: 80%;
+    text-align: justify;
+    font-size: 2rem;
+    color: #333;
+    letter-spacing: 0.15rem;
+    line-height: 1.5;
+
+    @extend %hover-transform-scale-animation;
+    &:hover {
+      max-width: 85%;
+    }
+  }
+}

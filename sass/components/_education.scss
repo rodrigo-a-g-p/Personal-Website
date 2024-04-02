@@ -1,0 +1,63 @@
+.education-container {
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+  padding: 6rem;
+}
+
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(50rem, 1fr));
+  gap: 3rem;
+}
+
+.card {
+  overflow: hidden;
+  border: 3px solid #fdf2e9;
+  border-radius: $border-radius-sm;
+  transition: all 0.3s;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+
+  &:hover {
+    transform: scale(1.05);
+  }
+
+  &--image {
+    max-width: 50%;
+  }
+
+  &--title {
+    font-size: 1.75rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    max-width: 75%;
+    text-align: center;
+  }
+
+  &--location {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+
+    font-size: 1.5rem;
+    padding-bottom: 2rem;
+
+    &--icon {
+      height: 2rem;
+      width: 2rem;
+    }
+
+    &--text {
+      font-weight: 500;
+    }
+
+    &--date {
+      font-weight: 300;
+    }
+  }
+}

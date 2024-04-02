@@ -1,0 +1,34 @@
+.contact--container {
+  padding: 6rem 0;
+
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
+  align-items: center;
+}
+
+.btn--contact:link,
+.btn--contact:visited {
+  text-decoration: none;
+  text-align: center;
+  padding: 1.5rem 2rem;
+  font-size: 3rem;
+  background-color: $color-primary-dark;
+  color: $color-grey-light-1;
+  border-radius: $border-radius-sm;
+  transition: all 0.3s;
+
+  background-size: 220%; // cover == 100%
+  background-image: linear-gradient(
+    120deg,
+    transparent 0%,
+    transparent 50%,
+    #04aa6d 50%
+  );
+}
+
+.btn--contact:hover,
+.btn--contact:active {
+  background-position: 100%; // cover would yield the same result
+  transform: scale(1.3);
+}

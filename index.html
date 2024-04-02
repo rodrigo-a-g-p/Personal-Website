@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rodrigo's Personal Site</title>
+    <link rel="icon" type="image/x-icon" href="assets/images/icon.png" />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- ----------- -->
+
+    <!-- SCRIPTS TO ACCESS ICONS FROM ionic.io/ionicons -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+    <!-- ----------- -->
+
+    <link rel="stylesheet" href="css/styles.css" />
+    <script defer type="module" src="js/index.js"></script>
+  </head>
+  <body>
+    <section class="header">
+      <nav class="navbar">
+        <h1 class="navbar-title">Rodrigo's Personal Website</h1>
+
+        <li class="navbar-list">
+          <ul class="navbar-list-item">
+            <a class="navbar-button" href="#section-about">About</a>
+          </ul>
+          <ul class="navbar-list-item">
+            <a class="navbar-button" href="#section-contact">Contact</a>
+          </ul>
+        </li>
+      </nav>
+    </section>
+
+    <section class="section-hero">
+      <div class="hero">
+        <h1 class="hero--title">Software Developer</h1>
+        <img
+          class="hero--image"
+          src="assets/images/profile-picture-main.jpeg"
+          alt="Hero image"
+        />
+      </div>
+    </section>
+
+    <section id="section-about" class="section-about">
+      <div class="about">
+        <div class="about--image--container">
+          <img
+            class="about--image"
+            src="assets/images/profile-picture-sub.jpeg"
+            alt="About image"
+          />
+        </div>
+
+        <h2 class="heading heading--primary">About me</h2>
+
+        <p class="about--text">
+          Hi! My name is Rodrigo, and I am software developer. Currently, I am
+          working as a backend developer for FABAMAQ software house, which
+          specializes in creating fun and interactive games. I have a Master's
+          degree in Economics from ISCTE-IUL, and a Postgraduate degree in Data
+          Science and Analytics from NOVA IMS, both among the most renowned
+          higher-learning institutions in Lisbon, Portugal. I am dedicated, and
+          strive for excellence in everything I do. I am confident in my
+          abilities, while actively seeking new ways of improving myself and
+          expand my skillset, which has led me to do a lot of reasearch and
+          study in my free time. Let's connect?
+        </p>
+      </div>
+    </section>
+
+    <section class="section-soft-skills">
+      <div class="flexbox-heading-and-container">
+        <h1 class="heading heading--primary">What I bring to the table</h1>
+
+        <div class="soft-skills--container">
+          <div class="soft-skills--item">
+            <ion-icon
+              class="soft-skills--icon"
+              name="diamond-outline"
+            ></ion-icon>
+            <!-- what about that icon with an extended hand and a lightbulb ?!?!? -->
+            <p class="soft-skills--text">
+              I have experience in the and the skills required to succeed
+            </p>
+          </div>
+
+          <div class="soft-skills--item">
+            <ion-icon class="soft-skills--icon" name="bulb-outline"></ion-icon>
+            <!-- what about that icon with an extended hand and a lightbulb ?!?!? -->
+            <p class="soft-skills--text">
+              I am creative, dynamic, dedicated and always strive for excellence
+              is everything I do
+            </p>
+          </div>
+
+          <div class="soft-skills--item">
+            <ion-icon
+              class="soft-skills--icon"
+              name="accessibility-outline"
+            ></ion-icon>
+            <!-- what about that icon with an extended hand and a lightbulb ?!?!? -->
+            <p class="soft-skills--text">
+              I like to work in a team environment and cooperate with people to
+              achieve results.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-company">
+      <div class="flexbox-heading-and-container">
+        <h1 class="heading heading--primary">Employment history</h1>
+
+        <div class="company--container">
+          <div class="company--item">
+            <img
+              class="company--image"
+              src="assets/images/companies/worten.png"
+              alt="worten image"
+            />
+            <p class="company--text">
+              Responsible for Data management, reporting, and developing
+              innovative solutions using software engineering skills in the
+              context of a result-driven, fast-paced team environment
+            </p>
+            <p class="company--date">September 2021 - March 2022</p>
+          </div>
+
+          <div class="company--item">
+            <img
+              class="company--image"
+              src="assets/images/companies/siemens.png"
+              alt="siemens image"
+            />
+            <p class="company--text">
+              Member of Financial IT team, responsible for financial planning
+              and consulting, providing solutions to clients
+            </p>
+            <p class="company--date">March 2022 - May 2023</p>
+          </div>
+
+          <div class="company--item">
+            <img
+              class="company--image"
+              src="assets/images/companies/fabamaq.png"
+              alt="fabamaq image"
+            />
+            <p class="company--text">
+              At FABAMAQ, I am responsible for the creation and development of
+              online games, and particular features of games which would then be
+              featured in the most renowned online gaming platforms both
+              nationally, and internationally
+            </p>
+            <p class="company--date">
+              May 2023 - <span class="company--date--present">Present</span>
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-skills">
+      <div class="flexbox-heading-and-container">
+        <h1 class="heading heading--primary">Technical Skills</h1>
+        <div class="skills--grid skills--technical"></div>
+      </div>
+
+      <div class="flexbox-heading-and-container">
+        <h1 class="heading heading--primary">Language Skills</h1>
+        <div class="skills--grid skills--language"></div>
+      </div>
+    </section>
+
+    <section class="section-education">
+      <div class="education-container">
+        <h1 class="heading heading--primary">Academic Background</h1>
+
+        <div class="card-container">
+          <div class="card">
+            <img
+              class="card--image"
+              src="assets/images/education/iscte.png"
+              alt="iscte image"
+            />
+            <p class="card--title">Bachelor's Degree in Business Management</p>
+            <div class="card--location">
+              <ion-icon
+                class="card--location--icon"
+                name="location-outline"
+              ></ion-icon>
+              <p class="card--location--text">Lisbon, Portugal</p>
+              <p class="card--location--date">September 2016 - July 2019</p>
+            </div>
+          </div>
+
+          <div class="card">
+            <img
+              class="card--image"
+              src="assets/images/education/srh.png"
+              alt="srh image"
+            />
+            <p class="card--title">Erasmus+ Programme</p>
+            <div class="card--location">
+              <ion-icon
+                class="card--location--icon"
+                name="location-outline"
+              ></ion-icon>
+              <p class="card--location--text">Berlin, Germany</p>
+              <p class="card--location--date">October 2018 - February 2019</p>
+            </div>
+          </div>
+
+          <div class="card">
+            <img
+              class="card--image"
+              src="assets/images/education/iscte.png"
+              alt="iscte image"
+            />
+            <p class="card--title">Master's Degree in Economics</p>
+            <div class="card--location">
+              <ion-icon
+                class="card--location--icon"
+                name="location-outline"
+              ></ion-icon>
+              <p class="card--location--text">Lisbon, Portugal</p>
+              <p class="card--location--date">September 2020 - December 2022</p>
+            </div>
+          </div>
+
+          <div class="card">
+            <img
+              class="card--image"
+              src="assets/images/education/nova-ims.png"
+              alt="nova ims image"
+            />
+            <p class="card--title">
+              Postgraduate degree in Enterprise Data Science & Analytics
+            </p>
+            <div class="card--location">
+              <ion-icon
+                class="card--location--icon"
+                name="location-outline"
+              ></ion-icon>
+              <p class="card--location--text">Lisbon, Portugal</p>
+              <p class="card--location--date">February 2022 - February 2023</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="section-contact" class="section-contact">
+      <div class="contact--container">
+        <h1 class="heading heading--primary">Contact me</h1>
+        <a class="btn--contact" href="mailto:ragponte@gmail.com"
+          >Send an email!</a
+        >
+      </div>
+    </section>
+
+    <section class="section-footer">
+      <footer class="footer-container">
+        <p class="footer--copyright">Copyright &copy; 2024 by Rodrigo Ponte</p>
+
+        <ul class="footer--list">
+          <li class="footer--list--item">
+            <ion-icon
+              class="footer--list--item--icon"
+              name="call-outline"
+            ></ion-icon>
+            <p class="footer--list--item--text">00351969815244</p>
+          </li>
+
+          <li class="footer--list--item">
+            <ion-icon
+              class="footer--list--item--icon"
+              name="mail-outline"
+            ></ion-icon>
+            <a class="footer--list--item--link" href="mailto:ragponte@gmail.com"
+              >rodrigoagponte@gmail.com</a
+            >
+          </li>
+
+          <li class="footer--list--item">
+            <ion-icon
+              class="footer--list--item--icon"
+              name="logo-github"
+            ></ion-icon>
+            <a
+              class="footer--list--item--link"
+              href="https://github.com/rodrigo-a-g-p"
+              >GitHub</a
+            >
+          </li>
+
+          <li class="footer--list--item">
+            <ion-icon
+              class="footer--list--item--icon"
+              name="logo-linkedin"
+            ></ion-icon>
+            <a
+              class="footer--list--item--link"
+              href="https://www.linkedin.com/in/rodrigo-ponte-3a58ba196/"
+              >LinkedIn</a
+            >
+          </li>
+        </ul>
+      </footer>
+    </section>
+  </body>
+</html>

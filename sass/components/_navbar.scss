@@ -1,0 +1,40 @@
+.navbar {
+  background-color: $background-color-orange-light;
+  color: $color-secondary;
+
+  display: flex;
+  justify-content: space-between;
+
+  padding: 4rem 3.5rem;
+  font-size: 2.3rem;
+
+  & > * {
+    animation: fadeIn 3s ease-out;
+  }
+
+  &-title {
+    @extend %hover-transform-scale-animation;
+
+    &:hover {
+      color: $color-primary-dark;
+    }
+  }
+
+  &-list {
+    display: flex;
+    gap: 4rem;
+    margin-right: $margin-sm;
+  }
+
+  &-button:link,
+  &-button:visited {
+    text-decoration: none;
+    color: $color-secondary;
+    transition: all 0.3s;
+  }
+
+  &-button:hover,
+  &-button:active {
+    color: $color-primary-dark;
+  }
+}

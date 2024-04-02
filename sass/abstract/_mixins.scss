@@ -1,0 +1,29 @@
+@mixin respond($breakpointValue) {
+  @if $breakpointValue == 1340 {
+    /* BELOW 1340px  -  1340px / 16 = 84em  */
+    @media only screen and (max-width: 84em) {
+      @content;
+    }
+  }
+
+  @if $breakpointValue == 1136 {
+    /* BELOW 1136px  -  1136px / 16 = 71em  */
+    @media only screen and (max-width: 71em) {
+      @content;
+    }
+  }
+
+  @if $breakpointValue == 1040 {
+    /* BELOW 1040px  -  1040px / 16 = 65em  */
+    @media only screen and (max-width: 65em) {
+      @content;
+    }
+  }
+
+  @if $breakpointValue == 832 {
+    /* BELOW 832px  -  832px / 16 = 52em  */
+    @media only screen and (max-width: 52em) {
+      @content;
+    }
+  }
+}

@@ -1,0 +1,41 @@
+.company {
+  &--container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4rem;
+  }
+
+  &--item {
+    flex: 1 1 40rem;
+
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+
+    text-align: justify;
+
+    @extend %hover-transform-translate-animation;
+  }
+
+  &--image {
+    width: 15rem;
+    border-radius: $border-radius-extra-sm;
+    box-shadow: 0 0 1rem $color-primary-dark;
+  }
+
+  &--text {
+    max-width: 80%;
+    font-size: 1.5rem;
+    line-height: 1.5;
+    letter-spacing: 0.1rem;
+  }
+
+  &--date {
+    font-size: 1.5rem;
+
+    &--present {
+      font-weight: 500;
+    }
+  }
+}

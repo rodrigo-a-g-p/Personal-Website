@@ -1,0 +1,48 @@
+.hero {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(50rem, 1fr));
+  gap: 3rem;
+  justify-items: center;
+  align-items: center;
+
+  padding: 4.3rem 5rem;
+
+  &--title {
+    font-size: 6rem;
+    animation: moveInLeft 3s ease-out;
+    @extend %hover-transform-scale-animation;
+    // this @extend already as the transition property, which will be applied to all transitions of this element, therefore, there is no need to write the transition property here again
+
+    background-size: 220%; // cover == 100%
+    background-image: linear-gradient(
+      30deg,
+      transparent 0%,
+      transparent 50%,
+      $color-primary-dark 50%
+    );
+    background-clip: text;
+
+    &:hover {
+      background-position: 100%; // cover would yield the same result
+      color: transparent;
+    }
+
+    @include respond(1340) {
+      font-size: 5rem;
+    }
+
+    @include respond(1136) {
+      font-size: 4.5rem;
+    }
+  }
+
+  &--image {
+    max-width: 55%;
+
+    border-radius: $border-radius-md;
+    box-shadow: 0 0 1rem $color-primary-dark;
+    animation: fadeIn 5s ease-out;
+
+    @extend %hover-transform-scale-animation;
+  }
+}

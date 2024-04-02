@@ -1,0 +1,54 @@
+.footer-container {
+  padding: 5rem 0;
+  display: flex;
+  gap: 4rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer--copyright {
+  color: $color-grey-light-1;
+  font-size: 1.5rem;
+  @extend %hover-transform-scale-animation;
+
+  &:hover {
+    color: $color-primary-dark;
+  }
+}
+
+.footer--list {
+  display: grid;
+  grid-template-columns: 1fr;
+  row-gap: 2rem;
+
+  &--item {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    color: $color-grey-light-1;
+    font-size: 1.5rem;
+    transition: all 0.3s;
+
+    &:hover {
+      color: $color-primary-dark;
+      transform: translate(1rem, 0);
+    }
+
+    &--icon {
+      width: 2.5rem;
+      height: 2.5rem;
+    }
+
+    &--link:link,
+    &--link:visited {
+      text-decoration: none;
+      color: inherit;
+      transition: all 0.3s;
+    }
+
+    &--link:hover,
+    &--link:active {
+      color: $color-primary-dark;
+    }
+  }
+}

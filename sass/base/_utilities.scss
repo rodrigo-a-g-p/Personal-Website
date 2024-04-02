@@ -1,0 +1,21 @@
+.flexbox-heading-and-container {
+  padding: 8rem 4rem;
+
+  display: flex;
+  flex-direction: column;
+  gap: 6rem;
+}
+
+.move-in-left {
+  animation: moveInLeft 1s ease-out;
+}
+
+.move-in-right {
+  animation: moveInRight 1s ease-out;
+}
+
+.hide-element {
+  opacity: 0;
+  pointer-events: none;
+  visibility: hidden;
+}

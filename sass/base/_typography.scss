@@ -1,0 +1,19 @@
+.heading {
+  font-weight: 700;
+  color: $color-primary-dark;
+  text-align: center;
+  text-transform: uppercase;
+  transition: all 0.3s;
+
+  &--primary {
+    font-size: 6rem;
+
+    &:hover {
+      transform: scale(1.2);
+    }
+  }
+
+  &--secondary {
+    font-size: 3rem;
+  }
+}
