@@ -82,7 +82,7 @@ const allSkills = [
   {
     name: "Mandarin Chinese",
     description:
-      "The most spoken language in the world by number of native speakers. I started learning mandarin chinese with the intent of visiting China. Currently I have HSK1 and HSK2 levels, and I plan on completing more levels in the future",
+      "The most spoken language in the world by number of native speakers. I started learning mandarin chinese with the intent of visiting China. Currently I have HSK1, HSK2, and HSK3 levels, and I plan on completing more levels in the future",
     image: "china.png",
     type: "language",
   },
