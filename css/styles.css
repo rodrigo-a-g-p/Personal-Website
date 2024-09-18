@@ -152,7 +152,9 @@ body {
     .about--image--container:hover {
       transform: scale(1.2); }
   .about--image {
-    width: 15%; }
+    width: 25%;
+    position: relative;
+    left: 3%; }
   .about--text {
     max-width: 80%;
     text-align: justify;

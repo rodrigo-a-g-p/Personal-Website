@@ -23,7 +23,11 @@
   }
 
   &--image {
-    width: 15%;
+    // Styles in this class are custom-made for the image of me with the Gate of Salutation of the Topkapi Palace in Istanbul in the background
+    // other images may require different custom styles
+    width: 25%;
+    position: relative;
+    left: 3%;
   }
 
   &--text {
